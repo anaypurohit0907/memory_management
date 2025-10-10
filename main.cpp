@@ -18,7 +18,6 @@ int main() {
   auto start = std::chrono::high_resolution_clock::now();
   for (int i = 0; i < N; ++i) {
     ptrs[i] = mm::allocate(32);
-    printf("%p\n", ptrs[i]);
     assert(ptrs[i] != nullptr);
   }
   for (int i = 0; i < N; ++i) {
